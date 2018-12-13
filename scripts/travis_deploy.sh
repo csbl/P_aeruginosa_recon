@@ -21,7 +21,7 @@ else
     git checkout "${deployment}"
     git checkout "${TRAVIS_BRANCH}"
     echo "Tracked build."
-    memote run
+    memote run --experimental data/experiments.yml
     echo "Start deploy to ${deployment}..."
 fi
 
